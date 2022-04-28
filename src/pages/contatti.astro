@@ -1,98 +1,106 @@
 ---
-import '../styles/global.css';
-import Menu from '../layouts/menu.astro';
-import Footer from '../layouts/footer.astro';
-import Form from '../components/form.svelte';
+import "../styles/global.css";
+import Menu from "../layouts/menu.astro";
+import Footer from "../layouts/footer.astro";
+import Form from "../components/form.svelte";
+import pec from "../assets/pec.png";
 ---
+
 <Menu />
 
-
-    <!-- Container for demo purpose -->
-    <div class="container my-24 px-6 mx-auto">
-      <!-- Section: Design Block -->
-      <section class="mb-32 text-gray-800 text-center">
-        <style>
-          .map-container {
-            height: 700px;
-            z-index: -1;
-          }
-        </style>
-        <div class="px-6 py-12 md:px-12">
-          <div class="container mx-auto xl:px-32">
-            <div class="grid lg:grid-cols-2 flex items-center">
-              <div class="md:mt-12 lg:mt-0 mb-12 lg:mb-0">
-                <div
-                  class="block rounded-lg shadow-lg px-6 py-12 md:px-12 lg:-mr-14"
-                  style="
+<!-- Container for demo purpose -->
+<div class="container my-24 px-6 mx-auto">
+  <!-- Section: Design Block -->
+  <section class="mb-32 text-gray-800 text-center">
+    <style>
+      .map-container {
+        height: 700px;
+        z-index: -1;
+      }
+    </style>
+    <div class="px-6 py-12 md:px-12">
+      <div class="container mx-auto xl:px-32">
+        <div class="grid lg:grid-cols-2 flex items-center">
+          <div class="md:mt-12 lg:mt-0 mb-12 lg:mb-0">
+            <div
+              class="block rounded-lg shadow-lg px-6 py-12 md:px-12 lg:-mr-14"
+              style="
                     background: hsla(0, 0%, 100%, 0.55);
                     backdrop-filter: blur(30px);
                   "
-                >
-                  <h2 class="text-3xl font-bold mb-12">Contattaci</h2>
-                 <Form client:load/>
-                 <div class="flex flex-col justify-around">
-  <div class="flex flex-row justify-start py-2 mt-5">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      class="h-5 w-5"
-      viewBox="0 0 20 20"
-      fill="currentColor"
-    >
-      <path
-        fill-rule="evenodd"
-        d="M2.94 6.412A2 2 0 002 8.108V16a2 2 0 002 2h12a2 2 0 002-2V8.108a2 2 0 00-.94-1.696l-6-3.75a2 2 0 00-2.12 0l-6 3.75zm2.615 2.423a1 1 0 10-1.11 1.664l5 3.333a1 1 0 001.11 0l5-3.333a1 1 0 00-1.11-1.664L10 11.798 5.555 8.835z"
-        clip-rule="evenodd"
-      />
-    </svg>
-    <a href="mailto:Voxcostruzioni@libero.it" class="px-6"> voxcostruzioni@libero.it</a>
-  </div>
-  <div class="flex flex-row justify-start py-2">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      class="h-5 w-5"
-      viewBox="0 0 20 20"
-      fill="currentColor"
-    >
-      <path
-        d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
-      />
-    </svg>
-    <a href="tel:3356169220" class="px-6">3356169220 - 019505395</a>
-  </div>
-  <div class="flex flex-row justify-start py-2">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      class="h-5 w-5"
-      viewBox="0 0 20 20"
-      fill="currentColor"
-    >
-      <path
-        fill-rule="evenodd"
-        d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-        clip-rule="evenodd"
-      />
-    </svg>
-    <span class="px-6">Corso Stalingrado, 4, 17014 Cairo Montenotte</span>
-  </div>
-</div>
-
+            >
+              <h2 class="text-3xl font-bold mb-12">Contattaci</h2>
+              <Form client:load />
+              <div class="flex flex-col justify-around">
+                <div class="flex flex-row justify-start py-2 mt-5">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2.94 6.412A2 2 0 002 8.108V16a2 2 0 002 2h12a2 2 0 002-2V8.108a2 2 0 00-.94-1.696l-6-3.75a2 2 0 00-2.12 0l-6 3.75zm2.615 2.423a1 1 0 10-1.11 1.664l5 3.333a1 1 0 001.11 0l5-3.333a1 1 0 00-1.11-1.664L10 11.798 5.555 8.835z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                  <a href="mailto:Voxcostruzioni@libero.it" class="px-6">
+                    voxcostruzioni@libero.it</a
+                  >
                 </div>
-              </div>
-              <div class="md:mb-12 lg:mb-0">
-                <div class="map-container relative shadow-lg rounded-lg">
-                  <iframe
-                    src="https://maps.google.com/maps?q=Vox%20Costruzioni%20S.A.S.&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                    class="left-0 top-0 h-full w-full absolute rounded-lg"
-                    frameborder="0"
-                    allowfullscreen
-                  ></iframe>
+                <div class="flex flex-row justify-start py-2">
+                  <img src={pec} alt="" width="20" height="20" />
+                  <a href="mailto:Voxcostruzioni@libero.it" class="px-6">
+                    voxcostruzioni@pec.it</a
+                  >
+                </div>
+                <div class="flex flex-row justify-start py-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
+                    ></path>
+                  </svg>
+                  <a href="tel:3356169220" class="px-6"
+                    >3356169220 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-</a
+                  ><a href="tel:019505395">019505395</a>
+                </div>
+                <div class="flex flex-row justify-start py-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                  <span class="px-6"
+                    >Corso Stalingrado, 4, 17014 Cairo Montenotte</span
+                  >
                 </div>
               </div>
             </div>
           </div>
+          <div class="md:mb-12 lg:mb-0">
+            <div class="map-container relative shadow-lg rounded-lg">
+              <iframe
+                src="https://maps.google.com/maps?q=Vox%20Costruzioni%20S.A.S.&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                class="left-0 top-0 h-full w-full absolute rounded-lg"
+                frameborder="0"
+                allowfullscreen></iframe>
+            </div>
+          </div>
         </div>
-      </section>
-      <!-- Section: Design Block -->
+      </div>
     </div>
+  </section>
+  <!-- Section: Design Block -->
+</div>
 <Footer />
-

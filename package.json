@@ -12,6 +12,7 @@
     "@astrojs/renderer-svelte": "^0.5.2",
     "astro": "^0.24.3",
     "postcss": "^8.4.12",
+    "prettier-plugin-astro": "^0.0.12",
     "tailwindcss": "^3.0.23"
   }
 }

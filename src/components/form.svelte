@@ -4,6 +4,7 @@
   const FORMSPARK_ACTION_URL = "https://submit-form.com/CZMLvCKn";
 
   let name = "";
+  let number = "";
   let email = "";
   let message = "";
   let submitting = false;
@@ -19,11 +20,13 @@
         },
         body: JSON.stringify({
           name,
+          number,
           email,
           message,
         }),
       });
       name = "";
+      number = "";
       email = "";
       message = "";
       //alert("Form submitted");
@@ -51,6 +54,15 @@
       bind:value={email}
       class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-green-600 focus:outline-none"
       placeholder="Email"
+      required
+    />
+  </div>
+  <div class="form-group mb-6">
+    <input
+      type="number"
+      bind:value={number}
+      class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-green-600 focus:outline-none"
+      placeholder="Numero"
       required
     />
   </div>

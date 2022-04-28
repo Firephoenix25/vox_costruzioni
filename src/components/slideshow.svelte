@@ -1,8 +1,4 @@
 <script>
-  import image1 from "../assets/Lavoro_1.jpeg";
-  import image2 from "../assets/Lavoro_2.jpeg";
-  import image3 from "../assets/Lavoro_3.jpeg";
-  import image4 from "../assets/Lavoro_4.jpeg";
   import { fade } from "svelte/transition";
 
   export let carouselPhotos;
