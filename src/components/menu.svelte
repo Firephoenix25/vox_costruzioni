@@ -11,7 +11,7 @@
     <a
       href="/"
       class="relative z-10 flex items-center w-auto text-2xl font-extrabold leading-none text-gray-500 select-none"
-      >Vox Costruzioni</a
+      >Vox Costruzioni <span class="text-green-600">&nbsp; S.A.S.</span></a
     >
 
     <nav
