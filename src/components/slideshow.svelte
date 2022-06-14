@@ -14,11 +14,11 @@
   // <Slideshow carouselPhotos={[image1,image2]} client:load />
 </script>
 
-<div class="box flex relative {mod}">
+<div class="flex relative {mod}">
   <img
     transition:fade
     alt="gallery"
-    class="absolute inset-0 w-full h-full object-cover object-center"
+    class="absolute inset-0 w-full h-full object-cover object-top"
     src={carouselPhotos[index]}
   />
   <div
