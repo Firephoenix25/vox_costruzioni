@@ -40,7 +40,7 @@
       name="keywords"
       content="impresa edile,costruzioni,Ristrutturazioni,vox costruzioni"
     />
-    <title>Vox Costruzioni</title>
+    <title>Vox Costruzioni S.A.S.</title>
   </head>
 </svelte:head>
 
